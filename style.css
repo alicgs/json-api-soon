@@ -12,13 +12,56 @@ body{
 } 
 
 
+nav{
+    .container{
+        z-index: 2;
+        position: fixed;
+        margin-top: 7%;
+        border-radius: 50px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+        background-color: #ffffff3f;
+        backdrop-filter: blur(10px);
+        .nav-brand{
+            img{
+                position: relative;
+                left: 40rem;
+                width: 75px;
+                height: 75px;
+            }
+            h2{
+                color: #072f49;
+                
+                font-size: 38px;
+            }
+            h5{
+                position: relative;
+                left: 20rem;
+            }
+        }
+        .nav-btn-group{
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                &:hover{
+                    transition: .3s ease-in-out;
+                    color: #FDCA34;
+                }
+                span{
+                    color: #d3ab35;
+                }
+            }
+        }
+    }
+}
 
 button {
+    margin-top: 6rem;
     padding: 17px 40px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -66,4 +109,10 @@ button {
 .list-group li{
     font-size: 0.9rem;
     border: none;
+}
+
+@media only screen and (max-width: 1400px){
+    nav{
+        display: none;
+    }
 }
